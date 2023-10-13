@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 install_requires = [
     "asn1crypto==1.5.1",
-    "oscrypto==1.3.0",
+    "oscrypto @ git+https://github.com/wbond/oscrypto.git@1547f535001ba568b239b8797465536759c742a3", # https://github.com/wbond/oscrypto/issues/78
     "pyOpenSSL==23.2.0",
 ]
 
@@ -27,7 +27,7 @@ setup(
     long_description="Docs for this project are maintained at "
     "https://github.com/abhishek-ram/pyas2-lib/blob/"
     "master/README.md",
-    version="1.4.3",
+    version="1.4.3.1",
     author="Abhishek Ram",
     author_email="abhishek8816@gmail.com",
     packages=find_packages(where=".", exclude=("test*",)),
